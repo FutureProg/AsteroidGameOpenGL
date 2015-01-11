@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		015464FA1A070FAA008AF119 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 015464F91A070FAA008AF119 /* main.cpp */; };
+		0154650B1A070FAA008AF119 /* AsteroidGameOpenGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0154650A1A070FAA008AF119 /* AsteroidGameOpenGLTests.m */; };
+		015465151A070FB7008AF119 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015465141A070FB7008AF119 /* OpenGL.framework */; };
+		015465171A070FBC008AF119 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015465161A070FBC008AF119 /* OpenAL.framework */; };
+		015465191A07101D008AF119 /* libassimp.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 015465181A07101D008AF119 /* libassimp.3.0.0.dylib */; };
+		0154651B1A071041008AF119 /* libIL.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0154651A1A071041008AF119 /* libIL.1.dylib */; };
+		0154651D1A071072008AF119 /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0154651C1A071072008AF119 /* libglfw.3.1.dylib */; };
+		015465201A071605008AF119 /* GameWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0154651E1A071605008AF119 /* GameWindow.cpp */; };
+		015465231A071A09008AF119 /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 015465211A071A09008AF119 /* ShaderProgram.cpp */; };
+		015465261A071A47008AF119 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 015465241A071A47008AF119 /* Shader.cpp */; };
+		0154652A1A071A88008AF119 /* ShaderUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 015465281A071A88008AF119 /* ShaderUtils.cpp */; };
+		0154652C1A071B4D008AF119 /* plainshader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0154652B1A071B4D008AF119 /* plainshader.vsh */; };
+		0154652F1A071B60008AF119 /* plainshader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0154652E1A071B60008AF119 /* plainshader.fsh */; };
+		015465361A072760008AF119 /* Rocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 015465341A072760008AF119 /* Rocket.cpp */; };
+		01758D781A0AEB6400145539 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01758D771A0AEB6400145539 /* Utils.cpp */; };
+		01CAB87C1A1E7DA3009187E9 /* Laser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01CAB87B1A1E7DA3009187E9 /* Laser.cpp */; };
+		01E157C71A0A6B87009432B0 /* Asteroid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01E157C51A0A6B87009432B0 /* Asteroid.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		015465051A070FAA008AF119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015464E91A070FA9008AF119 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 015464F01A070FA9008AF119;
+			remoteInfo = AsteroidGameOpenGL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		015464F11A070FA9008AF119 /* AsteroidGameOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsteroidGameOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		015464F51A070FAA008AF119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		015464F91A070FAA008AF119 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		015465041A070FAA008AF119 /* AsteroidGameOpenGLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsteroidGameOpenGLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		015465091A070FAA008AF119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0154650A1A070FAA008AF119 /* AsteroidGameOpenGLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsteroidGameOpenGLTests.m; sourceTree = "<group>"; };
+		015465141A070FB7008AF119 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		015465161A070FBC008AF119 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		015465181A07101D008AF119 /* libassimp.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.0.0.dylib; path = ../../../../../../../../opt/local/lib/libassimp.3.0.0.dylib; sourceTree = "<group>"; };
+		0154651A1A071041008AF119 /* libIL.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libIL.1.dylib; path = ../../../../../../../../opt/local/lib/libIL.1.dylib; sourceTree = "<group>"; };
+		0154651C1A071072008AF119 /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../../../../../opt/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
+		0154651E1A071605008AF119 /* GameWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWindow.cpp; sourceTree = "<group>"; };
+		0154651F1A071605008AF119 /* GameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWindow.h; sourceTree = "<group>"; };
+		015465211A071A09008AF119 /* ShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderProgram.cpp; sourceTree = "<group>"; };
+		015465221A071A09008AF119 /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProgram.h; sourceTree = "<group>"; };
+		015465241A071A47008AF119 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		015465251A071A47008AF119 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		015465281A071A88008AF119 /* ShaderUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderUtils.cpp; sourceTree = "<group>"; };
+		015465291A071A88008AF119 /* ShaderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderUtils.h; sourceTree = "<group>"; };
+		0154652B1A071B4D008AF119 /* plainshader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = plainshader.vsh; sourceTree = "<group>"; };
+		0154652E1A071B60008AF119 /* plainshader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = plainshader.fsh; sourceTree = "<group>"; };
+		015465321A07220F008AF119 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		015465341A072760008AF119 /* Rocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rocket.cpp; sourceTree = "<group>"; };
+		015465351A072760008AF119 /* Entities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entities.h; sourceTree = "<group>"; };
+		01758D771A0AEB6400145539 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		01CAB87B1A1E7DA3009187E9 /* Laser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Laser.cpp; sourceTree = "<group>"; };
+		01E157C41A09BFD5009432B0 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		01E157C51A0A6B87009432B0 /* Asteroid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Asteroid.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		015464EE1A070FA9008AF119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0154651D1A071072008AF119 /* libglfw.3.1.dylib in Frameworks */,
+				0154651B1A071041008AF119 /* libIL.1.dylib in Frameworks */,
+				015465191A07101D008AF119 /* libassimp.3.0.0.dylib in Frameworks */,
+				015465171A070FBC008AF119 /* OpenAL.framework in Frameworks */,
+				015465151A070FB7008AF119 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015465011A070FAA008AF119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		015464E81A070FA9008AF119 = {
+			isa = PBXGroup;
+			children = (
+				0154651C1A071072008AF119 /* libglfw.3.1.dylib */,
+				0154651A1A071041008AF119 /* libIL.1.dylib */,
+				015465181A07101D008AF119 /* libassimp.3.0.0.dylib */,
+				015465161A070FBC008AF119 /* OpenAL.framework */,
+				015465141A070FB7008AF119 /* OpenGL.framework */,
+				015464F31A070FA9008AF119 /* AsteroidGameOpenGL */,
+				015465071A070FAA008AF119 /* AsteroidGameOpenGLTests */,
+				015464F21A070FA9008AF119 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		015464F21A070FA9008AF119 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				015464F11A070FA9008AF119 /* AsteroidGameOpenGL.app */,
+				015465041A070FAA008AF119 /* AsteroidGameOpenGLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		015464F31A070FA9008AF119 /* AsteroidGameOpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				015465301A0721F6008AF119 /* Entities */,
+				0154652D1A071B52008AF119 /* Shaders */,
+				015465271A071A71008AF119 /* Utils */,
+				015464F41A070FAA008AF119 /* Supporting Files */,
+				0154651E1A071605008AF119 /* GameWindow.cpp */,
+				0154651F1A071605008AF119 /* GameWindow.h */,
+				015465211A071A09008AF119 /* ShaderProgram.cpp */,
+				015465241A071A47008AF119 /* Shader.cpp */,
+				015465251A071A47008AF119 /* Shader.h */,
+				015465221A071A09008AF119 /* ShaderProgram.h */,
+			);
+			path = AsteroidGameOpenGL;
+			sourceTree = "<group>";
+		};
+		015464F41A070FAA008AF119 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				015464F51A070FAA008AF119 /* Info.plist */,
+				015464F91A070FAA008AF119 /* main.cpp */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		015465071A070FAA008AF119 /* AsteroidGameOpenGLTests */ = {
+			isa = PBXGroup;
+			children = (
+				0154650A1A070FAA008AF119 /* AsteroidGameOpenGLTests.m */,
+				015465081A070FAA008AF119 /* Supporting Files */,
+			);
+			path = AsteroidGameOpenGLTests;
+			sourceTree = "<group>";
+		};
+		015465081A070FAA008AF119 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				015465091A070FAA008AF119 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		015465271A071A71008AF119 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				015465281A071A88008AF119 /* ShaderUtils.cpp */,
+				015465291A071A88008AF119 /* ShaderUtils.h */,
+				01E157C41A09BFD5009432B0 /* Utils.h */,
+				01758D771A0AEB6400145539 /* Utils.cpp */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		0154652D1A071B52008AF119 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				0154652B1A071B4D008AF119 /* plainshader.vsh */,
+				0154652E1A071B60008AF119 /* plainshader.fsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		015465301A0721F6008AF119 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				015465321A07220F008AF119 /* Entity.h */,
+				015465351A072760008AF119 /* Entities.h */,
+				015465341A072760008AF119 /* Rocket.cpp */,
+				01E157C51A0A6B87009432B0 /* Asteroid.cpp */,
+				01CAB87B1A1E7DA3009187E9 /* Laser.cpp */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		015464F01A070FA9008AF119 /* AsteroidGameOpenGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0154650E1A070FAA008AF119 /* Build configuration list for PBXNativeTarget "AsteroidGameOpenGL" */;
+			buildPhases = (
+				015464ED1A070FA9008AF119 /* Sources */,
+				015464EE1A070FA9008AF119 /* Frameworks */,
+				015464EF1A070FA9008AF119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsteroidGameOpenGL;
+			productName = AsteroidGameOpenGL;
+			productReference = 015464F11A070FA9008AF119 /* AsteroidGameOpenGL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		015465031A070FAA008AF119 /* AsteroidGameOpenGLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 015465111A070FAA008AF119 /* Build configuration list for PBXNativeTarget "AsteroidGameOpenGLTests" */;
+			buildPhases = (
+				015465001A070FAA008AF119 /* Sources */,
+				015465011A070FAA008AF119 /* Frameworks */,
+				015465021A070FAA008AF119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				015465061A070FAA008AF119 /* PBXTargetDependency */,
+			);
+			name = AsteroidGameOpenGLTests;
+			productName = AsteroidGameOpenGLTests;
+			productReference = 015465041A070FAA008AF119 /* AsteroidGameOpenGLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		015464E91A070FA9008AF119 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Nickolas Morrison";
+				TargetAttributes = {
+					015464F01A070FA9008AF119 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					015465031A070FAA008AF119 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 015464F01A070FA9008AF119;
+					};
+				};
+			};
+			buildConfigurationList = 015464EC1A070FA9008AF119 /* Build configuration list for PBXProject "AsteroidGameOpenGL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 015464E81A070FA9008AF119;
+			productRefGroup = 015464F21A070FA9008AF119 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				015464F01A070FA9008AF119 /* AsteroidGameOpenGL */,
+				015465031A070FAA008AF119 /* AsteroidGameOpenGLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		015464EF1A070FA9008AF119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0154652C1A071B4D008AF119 /* plainshader.vsh in Resources */,
+				0154652F1A071B60008AF119 /* plainshader.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015465021A070FAA008AF119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		015464ED1A070FA9008AF119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01CAB87C1A1E7DA3009187E9 /* Laser.cpp in Sources */,
+				015465231A071A09008AF119 /* ShaderProgram.cpp in Sources */,
+				015464FA1A070FAA008AF119 /* main.cpp in Sources */,
+				015465261A071A47008AF119 /* Shader.cpp in Sources */,
+				01758D781A0AEB6400145539 /* Utils.cpp in Sources */,
+				015465201A071605008AF119 /* GameWindow.cpp in Sources */,
+				015465361A072760008AF119 /* Rocket.cpp in Sources */,
+				01E157C71A0A6B87009432B0 /* Asteroid.cpp in Sources */,
+				0154652A1A071A88008AF119 /* ShaderUtils.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		015465001A070FAA008AF119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0154650B1A070FAA008AF119 /* AsteroidGameOpenGLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		015465061A070FAA008AF119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 015464F01A070FA9008AF119 /* AsteroidGameOpenGL */;
+			targetProxy = 015465051A070FAA008AF119 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0154650C1A070FAA008AF119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0154650D1A070FAA008AF119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0154650F1A070FAA008AF119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/local/include,
+				);
+				INFOPLIST_FILE = AsteroidGameOpenGL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		015465101A070FAA008AF119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/local/include,
+				);
+				INFOPLIST_FILE = AsteroidGameOpenGL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		015465121A070FAA008AF119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AsteroidGameOpenGLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsteroidGameOpenGL.app/Contents/MacOS/AsteroidGameOpenGL";
+			};
+			name = Debug;
+		};
+		015465131A070FAA008AF119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AsteroidGameOpenGLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsteroidGameOpenGL.app/Contents/MacOS/AsteroidGameOpenGL";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		015464EC1A070FA9008AF119 /* Build configuration list for PBXProject "AsteroidGameOpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0154650C1A070FAA008AF119 /* Debug */,
+				0154650D1A070FAA008AF119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0154650E1A070FAA008AF119 /* Build configuration list for PBXNativeTarget "AsteroidGameOpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0154650F1A070FAA008AF119 /* Debug */,
+				015465101A070FAA008AF119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		015465111A070FAA008AF119 /* Build configuration list for PBXNativeTarget "AsteroidGameOpenGLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015465121A070FAA008AF119 /* Debug */,
+				015465131A070FAA008AF119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 015464E91A070FA9008AF119 /* Project object */;
+}
